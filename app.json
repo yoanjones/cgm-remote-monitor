@@ -1,4 +1,4 @@
-{
+1{
   "name": "CGM Remote Monitor",
   "repository": "https://github.com/nightscout/cgm-remote-monitor",
   "env": {
@@ -9,12 +9,12 @@
     },
     "API_SECRET": {
       "description": "REQUIRED: A secret passphrase that must be at least 12 characters long, required to enable POST and PUT; also required for the Care Portal",
-      "value": "",
+      "value": "1234567890ab",
       "required": true
     },
     "DISPLAY_UNITS": {
       "description": "Choices: mg/dl and mmol. Setting to mmol puts the entire server into mmol mode by default, no further settings needed.",
-      "value": "",
+      "value": "mmol",
       "required": false
     },
     "ENABLE": {
@@ -29,7 +29,7 @@
     },
     "ALARM_TYPES": {
       "description": "Alarm behavior currently 2 alarm types are supported simple and predict, and can be used independently or combined. The simple alarm type only compares the current BG to BG_ thresholds above, the predict alarm type uses highly tuned formula that forecasts where the BG is going based on it's trend. predict DOES NOT currently use any of the BG_* ENV's",
-      "value": "",
+      "value": "predict",
       "required": false
     },
     "BG_HIGH": {
